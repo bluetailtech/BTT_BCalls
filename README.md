@@ -22,3 +22,8 @@ DURATION = Call duration seconds. (float)<BR>
 Requirements:<BR>
 java runtime + ffmpeg executable<BR>
 The ffmpeg executable can be downloaded from here: https://ffmpeg.org/download.html<BR>
+
+ss1.png
+<img src="https://github.com/bluetailtech/BTT_BCalls/blob/main/images/ss1.png">
+ss2.png
+<img src="https://github.com/bluetailtech/BTT_BCalls/blob/main/images/ss2.png">
