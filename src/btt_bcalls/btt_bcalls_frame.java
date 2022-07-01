@@ -73,7 +73,7 @@ public class btt_bcalls_frame extends javax.swing.JFrame
     console = new Console();
     jPanel4.add(console, java.awt.BorderLayout.CENTER);
 
-    String version = "2022-06-30_1500";
+    String version = "2022-07-01_1259";
     System.out.println("BTT BCalls Version "+version);
     jLabel1.setText("BTT BCalls Verson "+version);
 

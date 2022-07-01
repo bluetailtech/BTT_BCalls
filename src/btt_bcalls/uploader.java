@@ -222,6 +222,7 @@ public class uploader implements Runnable
   public void convert_and_upload(File f, boolean is_mp3)
   {
     File ufile=null;
+    Process proc=null;
     try {
       java.util.Date d = new java.util.Date();
       long ts = d.getTime();
@@ -238,7 +239,8 @@ public class uploader implements Runnable
         ffmpeg_cmd = cfg.ffmpeg_bin+" -f wav -ac 1 -guess_layout_max 0 -i "+f.getAbsolutePath()+" "+"-c:a libfdk_aac -b:a 32k -cutoff 18000 test_"+ts_str+".m4a";
       }
       System.out.println("Running FFMPEG");
-      Runtime.getRuntime().exec(ffmpeg_cmd);
+      proc = Runtime.getRuntime().exec(ffmpeg_cmd);
+      proc.waitFor();
 
       upload_file( ufile, is_mp3 );
 

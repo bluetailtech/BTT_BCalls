@@ -1,5 +1,8 @@
 # Compiled class file
 *.class
+build
+dist
+btt_bcalls.ini
 
 # Log file
 *.log
